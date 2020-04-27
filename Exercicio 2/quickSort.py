@@ -8,7 +8,7 @@ def quickSort(lista, indEsquerdo, indDireito):
 def particao(lista, indEsquerdo, indDireito):
     i = indEsquerdo + 1
     j = indDireito
-    pivo = lista[indEsquerdo]
+    pivo = lista[indEsquerdo] #cria o pivo para manipular os indices
 
     while (i <= j):
         if (lista[i] <= pivo):
@@ -16,12 +16,13 @@ def particao(lista, indEsquerdo, indDireito):
         elif lista[j] > pivo:
             j -= 1
         else:
-            troca(lista, i, j)
+            troca(lista, i, j) #faz a troca dos valores dos indices
 
     troca(lista, indEsquerdo, j)
 
     return j
 
+#metodo que realiza a troca dos valores pelos indices
 def troca(lista, i, j):
     aux = lista[i]
     lista[i] = lista[j]
