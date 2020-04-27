@@ -1,6 +1,6 @@
 Readme no auxílio para a execução correta da atividade
 
-A tarefa destina-se a analisar dois algoritmos de ordenação, o Insertion Sort e o Selection Sort
+A tarefa destina-se a codifica dois algoritmos de ordenação, o Quick Sort e o Merge Sort
 
 1 - O programa foi feito em Python 2.7, diante da possibilidade de haver incompatibilidades com o Python 3, recomenda-se o uso do Python 2.7<br>
 2 - Extrair o arquivo instancias-numericas.tar.gz para a mesma pasta em que se encontra o arquivo quickSort.py e mergeSort.py<br>
