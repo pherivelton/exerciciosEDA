@@ -1,4 +1,5 @@
 import sys
+
 def mergeSort(lista, indEsquerdo, indDireito):
     if (indEsquerdo < indDireito):
         meio = (indEsquerdo + indDireito) // 2
@@ -7,12 +8,14 @@ def mergeSort(lista, indEsquerdo, indDireito):
         merge(lista, indEsquerdo, meio, indDireito)
 
 def merge(lista, indEsquerdo, meio, indDireito):
-    copiaLista = [0] * (indDireito - indEsquerdo + 1)
+
+    copiaLista = [0] * (indDireito - indEsquerdo + 1) #cria um array auxiliar para ajudar na ordenacao
 
     i = indEsquerdo
     j = meio + 1
     k = 0
 
+    #colocando os elementos na posicao correta
     while (i <= meio and j <= indDireito):
         if (lista[i] < lista[j]):
             copiaLista[k] = lista[i]
@@ -23,16 +26,19 @@ def merge(lista, indEsquerdo, meio, indDireito):
             k += 1
             j += 1
 
+    #ordenando os numeros do lado esquerdo
     while i <= meio:
         copiaLista[k] = lista[i]
         k += 1
         i += 1
 
+    #ordenando os numeros do lado direito
     while (j <= indDireito):
         copiaLista[k] = lista[j] 
         k += 1
         j += 1
 
+    #atualizando a lista original com os elementos ordenados
     for i in range(indEsquerdo, indDireito+1):
         lista[i] = copiaLista[i - indEsquerdo]
 
