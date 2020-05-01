@@ -6,7 +6,7 @@ A tarefa destina-se a codifica dois algoritmos de ordenação, o Counting Sort e
 2 - Extrair o arquivo instancias-numericas.tar.gz para a mesma pasta em que se encontra o arquivo countingSort.py e radixSort.py<br>
 3 - Ao extrair as instâncias, pode executar o programa via prompt de comando, dentro da pasta onde se encontra o arquivo .py e as instâncias.
   - Ex: python countingSort.py num.1000.1.in<br>
-  Ao executar esse comando, será gerado um arquivo txt de nome num.1000.1.in.txt, no mesmo local onde foi executado o comando. Neste arquivo está a saída da instância ordenada pelo algoritmo QuickSort. Analogamente, digitando o comando python mergeSort.py num.1000.1.in, o arquivo txt de nome num.1000.1.in.txt terá como saída a instância ordenada pelo Merge Sort
+  Ao executar esse comando, será gerado um arquivo txt de nome num.1000.1.in.txt, no mesmo local onde foi executado o comando. Neste arquivo está a saída da instância ordenada pelo algoritmo Counting Sort. Analogamente, digitando o comando python radixSort.py num.1000.1.in, o arquivo txt de nome num.1000.1.in.txt terá como saída a instância ordenada pelo Radix Sort
 <br>
 
 Enjoy =)
