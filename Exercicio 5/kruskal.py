@@ -1,7 +1,7 @@
 def buscaConjunto(pai, vertice):
     if pai[vertice] == vertice:
         return vertice
-    return buscaConjunto(pai, pai[i])
+    return buscaConjunto(pai, pai[vertice])
 
 def uniao(pai, subconjunto, vertX, vertY):
 
@@ -40,5 +40,8 @@ def kruskal(grafo, numVertices):
 
             arvIndex += 1
             arvore.append([u,v,peso])
-            uniao(pai, subconjunto, x, y)
+            uniao(pai, subconjunto, vertX, vertY)
     
+    print "Arvore minima"
+    for vertU,vertV,peso in arvore:
+        print ("%d - %d  (%d)" % (vertU,vertV,peso)) 
