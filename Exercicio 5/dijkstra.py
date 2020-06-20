@@ -27,6 +27,6 @@ def dijkstra(grafo, numVertices, origem):
             if grafo[u][v] > 0 and visitados[v] == False and distancias[v] > (distancias[u] + grafo[u][v]):
                 distancias[v] = distancias[u] + grafo[u][v] #relaxando o vertice
 
-    print ("Vertex tDistance from Source")
+    print ("Distancia para cada vertice a partir da origem")
     for i in range(numVertices):
-        print (i, "t", distancias[i])
+        print (i, "distancia", distancias[i])
