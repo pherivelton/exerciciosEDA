@@ -1,12 +1,18 @@
-Readme no auxílio para a execução correta da atividade
+Projeto Final da disciplina de Estrutura de Dados do mestrado UFPB - 2020.1
 
-A tarefa destina-se a codificar o problema da mochila inteira
+Projeto destina-se a implementar as seguintes heurísticas e metaheurísticas para o problema do Caixeiro Viajante
 
-1 - O programa foi feito em Python 2.7, diante da possibilidade de haver incompatibilidades com o Python 3, recomenda-se o uso do Python 2.7<br>
-2 - Extrair o arquivo instancias_mochila.zip para a mesma pasta em que se encontra o arquivo mochilaInteira.py<br>
-3 - Ao extrair as instâncias, pode executar o programa via prompt de comando, dentro da pasta onde se encontra o arquivo .py e as instâncias.
-  - Ex: python mochilaInteira.py mochila01.txt.txt<br>
-  Ao executar esse comando, será gerado um arquivo txt de nome mochila01.txt.txt.txt, no mesmo local onde foi executado o comando. Neste arquivo está a saída da instância onde é exibido o valor da mochila e os itens que foram escolhidos.
-<br>
+Heurísticas construtivas
+1 - Construção Aleatória
+2 - Vizinho mais próximo
+3 - Vizinho mais distante
+4 - Inserção mais barata
+5 - Bellmore E Nemhauser
 
-Enjoy =)
+Heurísticas de refinamento
+1 - 2-opt
+2 - Reinsercao
+3 - VND
+
+Metaheurística
+1 - Multistart
